@@ -1,0 +1,78 @@
+body{
+    background: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', 'Sans-serif';
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 5px 20px;
+}
+
+.title{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fieldset{
+    border: none;
+    margin: 10px 0;
+}
+
+.fieldset__input-name{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fieldset-data{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+    grid-gap: 5px;
+}
+
+.fieldset__label-idade{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.fieldset__input-idade{
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+.fieldset__label-nacionalidade{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.fieldset__select-nacionalidade{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.fieldset__input-email{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fieldset-password{
+    display: flex;
+}
+
+.fieldset__input-senha{
+    margin-left: .2rem;
+    flex-grow: 1;
+}
+
+.button{
+    align-self: center;
+}

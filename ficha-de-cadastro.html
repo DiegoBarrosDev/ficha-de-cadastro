@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="./cadastroSucesso.html" class="form">
+        <h2 class="title">Ficha de Cadastro</h2>
+        <fieldset class="fieldset fieldset-name">
+            <label for="name">Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" class="input fieldset__input-name" id="name" required>
+        </fieldset>
+        <fieldset class="fieldset fieldset-data">
+            <label for="idade" class="fieldset__label-idade">Idade:</label>
+            <input type="number" name="idade" placeholder="Digite a sua idade" data-tipo="idade" class="input fieldset__input-idade" required>
+            <label for="nacionalidade" class="fieldset__label-nacionalidade">Nacionalidade:</label>
+            <select name="nacionalidade" id="nacionalidade" class="input fieldset__select-nacionalidade">
+                <option value="brasileiro">Brasileiro(a)</option>
+                <option value="estrangeiro">Estrangeiro(a)</option>
+            </select>
+        </fieldset>
+        
+        <fieldset class="fieldset fieldset-email">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" placeholder="Digite o seu e-mail" class="input fieldset__input-email" required>
+        </fieldset>
+        <fieldset class="fieldset fieldset-password">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Digite uma Senha:" pattern="^(?=.*[a-z])(?=.*[A-Z]).{4,6}$" title="Sua senha deve conter de 4 a 6 dígitos, com pelo menos uma letra maiúscula e uma letra minúscula." class="input fieldset__input-senha" required>
+        </fieldset>
+
+        <button class="button" id="botao">Cadastrar</button>
+
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>
