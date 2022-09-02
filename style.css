@@ -76,3 +76,7 @@ body{
 .button{
     align-self: center;
 }
+
+.campo-invalido {
+    border: 2px solid #ed0c0c;
+}
