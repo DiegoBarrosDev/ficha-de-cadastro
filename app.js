@@ -5,7 +5,7 @@ const inputs = document.querySelectorAll('.input');
 const botao = document.querySelector('#botao');
 
 // escuta o evento clique no botão que 
-botao.addEventListener('click', function () {
+botao.addEventListener('blur', function () {
     // percorre a NodeList e para cada input
     inputs.forEach(function (input) {
         // e valida os seus dados
